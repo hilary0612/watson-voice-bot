@@ -1,0 +1,3758 @@
+{
+  "intents": [
+    {
+      "intent": "ofrecen1",
+      "examples": [
+        {
+          "text": "cuales son los prestamos que me ofrecen"
+        },
+        {
+          "text": "que me ofrece el banco"
+        },
+        {
+          "text": "que prestamos tienen"
+        },
+        {
+          "text": "tipo de prestamo"
+        },
+        {
+          "text": "brindame todos los distintos prestamos"
+        },
+        {
+          "text": "muestrame cuales prestamos cuenta"
+        },
+        {
+          "text": "cuales son los prestamos que tiene el banco"
+        },
+        {
+          "text": "cuales tienen"
+        },
+        {
+          "text": "que tipo de prestamos cuenta el banco"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "informacion",
+      "examples": [
+        {
+          "text": "lista de ubicaciones"
+        },
+        {
+          "text": "dame las direcciones de los locales"
+        },
+        {
+          "text": "donde queda sus sucursales"
+        },
+        {
+          "text": "puedes decirme las ubicaciones"
+        },
+        {
+          "text": "cuentan con solo un local"
+        },
+        {
+          "text": "donde esta la ubicacion"
+        }
+      ]
+    },
+    {
+      "intent": "consulta",
+      "examples": [
+        {
+          "text": "Cuales son los productos en promocion"
+        },
+        {
+          "text": "Cual es el producto segun mi personalidad"
+        },
+        {
+          "text": "Que es lo que me ofrecen"
+        },
+        {
+          "text": "Producto"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saludo",
+      "examples": [
+        {
+          "text": "buenas tardes"
+        },
+        {
+          "text": "saludos"
+        },
+        {
+          "text": "haloooou"
+        },
+        {
+          "text": "ey"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "heeey"
+        },
+        {
+          "text": "buenas noches"
+        },
+        {
+          "text": "ola"
+        },
+        {
+          "text": "hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "despedida",
+      "examples": [
+        {
+          "text": "nos vemos"
+        },
+        {
+          "text": "chao"
+        },
+        {
+          "text": "hasta luego"
+        },
+        {
+          "text": "adios"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "chau"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "agradecer",
+      "examples": [
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "grasias"
+        },
+        {
+          "text": "un agrado"
+        },
+        {
+          "text": "gracias"
+        },
+        {
+          "text": "te lo agradezco"
+        },
+        {
+          "text": "muchas gracias"
+        },
+        {
+          "text": "mil gracias"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "locations",
+      "examples": [
+        {
+          "text": "ciudad"
+        },
+        {
+          "text": "tienda"
+        },
+        {
+          "text": "lugar"
+        },
+        {
+          "text": "sede"
+        },
+        {
+          "text": "ubicación"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-person",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "genero_persona",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ambos",
+          "synonyms": [
+            "dos",
+            "nose"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Femenino",
+          "synonyms": [
+            "F",
+            "Mujer",
+            "Female"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Masculino",
+          "synonyms": [
+            "M",
+            "Male",
+            "Hombre",
+            "Varón"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "categoria_bebida",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "jugos",
+          "synonyms": [
+            "refrescos",
+            "juguito"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "agua",
+          "synonyms": [
+            "water",
+            "aguita",
+            "awuita",
+            "aua"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "gaseosa",
+          "synonyms": [
+            "gas",
+            "gaseosilla"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tamaño_bebida",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "<1Litro",
+          "synonyms": [
+            "menos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": ">1Litro",
+          "synonyms": [
+            "litroymedio",
+            "mas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "categoria_viveres",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "panaderia",
+          "synonyms": [
+            "panes",
+            "helados"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "frutas",
+          "synonyms": [
+            "saludable",
+            "fruta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bebidas",
+          "synonyms": [
+            "jugos ",
+            "aguas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "productos_tecnologia",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "celulares",
+          "synonyms": [
+            "basico",
+            "smartphone",
+            "phablet",
+            "tablet",
+            "clasicos",
+            "gama alta",
+            "gama media",
+            "gama baja",
+            "baratos",
+            "caros",
+            "niños",
+            "sumergibles"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "computadoras",
+          "synonyms": [
+            "laptop",
+            "macbook",
+            "lap",
+            "computadora",
+            "monitor",
+            "cpu",
+            "teclado ",
+            "mouse"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "electrodomesticos",
+          "synonyms": [
+            "electro",
+            "electordomesticos",
+            "domesticos",
+            "lavadora",
+            "secadora",
+            "televisor",
+            "radioi",
+            "radio",
+            "tv",
+            "refrigeradora",
+            "refri",
+            "plancha",
+            "cocina",
+            "licuadora"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tipo_compu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "escritorio",
+          "synonyms": [
+            "estatica",
+            "normal ",
+            "cpu",
+            "pc",
+            "equipo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "portatil",
+          "synonyms": [
+            "laptop",
+            "nootbock",
+            "liviana"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ropa_color",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Oscuro",
+          "synonyms": [
+            "Opacos",
+            "Hypster",
+            "Hipster",
+            "Negro",
+            "Gris",
+            "Plomo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Claro",
+          "synonyms": [
+            "Blanco",
+            "Celeste",
+            "Rosa",
+            "Rosado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Colorido",
+          "synonyms": [
+            "Rojo",
+            "Verde",
+            "Amarillo",
+            "Coloridos",
+            "Colores",
+            "Azul",
+            "Morado",
+            "Purpura"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Marcas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "philips",
+          "synonyms": [
+            "filips",
+            "pilips",
+            "filis"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "samsung",
+          "synonyms": [
+            "sansung",
+            "samsunge",
+            "sansun"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lg",
+          "synonyms": [
+            "LG",
+            "elyi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "formato_fruta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "paquete",
+          "synonyms": [
+            "kg"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "unidad",
+          "synonyms": [
+            "solo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "importante_compu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "calidad",
+          "synonyms": [
+            "cualidad",
+            "caracteristicas",
+            "requerimiento",
+            "velocidad"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "precio",
+          "synonyms": [
+            "costo",
+            "valor",
+            "dinero"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "inicio",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "descripcion",
+          "synonyms": [
+            "texto ",
+            "detalle ",
+            "descripvion"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "preguntas",
+          "synonyms": [
+            "preguntas",
+            "question ",
+            "respuestas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "rango_edad",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ADULTO-ADULTO MAYOR",
+          "synonyms": [
+            "Adulto",
+            "Adulto Mayor",
+            "Viejito",
+            "Viejo",
+            "Mayor",
+            "Anciano",
+            "Trabajador",
+            "Grande"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "BEBE-NINO",
+          "synonyms": [
+            "Bebe",
+            "Niño",
+            "Nino",
+            "Infante",
+            "Hijo menor",
+            "Mocoso",
+            "Chibolo",
+            "Bendición",
+            "bb",
+            "bebecito",
+            "niñito",
+            "Niña",
+            "niñita",
+            "bebecita",
+            "hijo",
+            "hija",
+            "hijastra",
+            "sobrinita"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ADOLESCENTE-JOVEN",
+          "synonyms": [
+            "Adolescente",
+            "Joven",
+            "Puberto",
+            "Puberta",
+            "Enamorada",
+            "Enamorado",
+            "Universitario",
+            "Colegial"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "JOVEN-ADULTO",
+          "synonyms": [
+            "joven",
+            "adulto",
+            "mayor",
+            "anciano",
+            "puberto "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-location",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "productos_ropa",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Polos",
+          "synonyms": [
+            "Polo",
+            "Top",
+            "Camiseta"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Formal",
+          "synonyms": [
+            "Terno",
+            "Vestido",
+            "Camisa",
+            "Falda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pantalones",
+          "synonyms": [
+            "Pantalón",
+            "Jean",
+            "Short"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "categoria",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ropa",
+          "synonyms": [
+            "polos",
+            "camisetas",
+            "pantalones",
+            "blusas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tecnologia",
+          "synonyms": [
+            "internet",
+            "celulares",
+            "tecnologa",
+            "laptops"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "viveres",
+          "synonyms": [
+            "comida",
+            "comer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mascotas",
+          "synonyms": [
+            "mascota",
+            "perros",
+            "gatos"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "lima",
+          "synonyms": [
+            "lma ",
+            "Lima"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cajamarca",
+          "synonyms": [
+            "cajamarka",
+            "Cajamarca",
+            "cjmarca"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "otro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "arequipa",
+          "synonyms": [
+            "Arequipa",
+            "arrequipa",
+            "arquipa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ayacucho",
+          "synonyms": [
+            "Ayacucho",
+            "ayacho",
+            "Huamanga"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "importante_frutas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "dulces",
+          "synonyms": [
+            "agradable"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "frutos secos",
+          "synonyms": [
+            "neutro",
+            "legumbres"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "citricos",
+          "synonyms": [
+            "acidos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "¿Cuál es tu tono de color favorito?",
+            "options": [
+              {
+                "label": "Colorido",
+                "value": {
+                  "input": {
+                    "text": "Colorido"
+                  }
+                }
+              },
+              {
+                "label": "Oscuro",
+                "value": {
+                  "input": {
+                    "text": "Oscuro"
+                  }
+                }
+              },
+              {
+                "label": "Claro",
+                "value": {
+                  "input": {
+                    "text": "Claro"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1578002427631",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1578002427637",
+      "previous_sibling": "handler_1_1578002427637"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1578002427631",
+      "context": {
+        "ropa_color": "@ropa_color"
+      },
+      "conditions": "@ropa_color",
+      "event_name": "input",
+      "dialog_node": "handler_1_1578002427637"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "¿Cuál es tu tono de color favorito?",
+            "options": [
+              {
+                "label": "Colorido",
+                "value": {
+                  "input": {
+                    "text": "Colorido"
+                  }
+                }
+              },
+              {
+                "label": "Oscuro",
+                "value": {
+                  "input": {
+                    "text": "Oscuro"
+                  }
+                }
+              },
+              {
+                "label": "Claro",
+                "value": {
+                  "input": {
+                    "text": "Claro"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_8_1578000578053",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1578000578060",
+      "previous_sibling": "handler_8_1578000578060"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1578000578053",
+      "context": {
+        "ropa_color": "@ropa_color"
+      },
+      "conditions": "@ropa_color",
+      "event_name": "input",
+      "dialog_node": "handler_8_1578000578060"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Escritorio",
+                "value": {
+                  "input": {
+                    "text": "Escritorio"
+                  }
+                }
+              },
+              {
+                "label": "Portatil",
+                "value": {
+                  "input": {
+                    "text": "Portatil"
+                  }
+                }
+              }
+            ],
+            "description": "Elija la mejor opcion",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1578231645912",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1578231645921",
+      "previous_sibling": "handler_6_1578231645921"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1578231645912",
+      "context": {
+        "tipo_compu": "@tipo_compu"
+      },
+      "conditions": "@tipo_compu",
+      "event_name": "input",
+      "dialog_node": "handler_6_1578231645921"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Plancha ",
+            "source": "https://images.philips.com/is/image/PhilipsConsumer/GC3802_20-IMS-es_PE?$jpglarge$&wid=1250",
+            "description": "Precio: s/400.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Laceadora",
+            "source": " https://images.philips.com/is/image/PhilipsConsumer/HP8363_00-IMS-es_PE?$jpglarge$&wid=1250",
+            "description": "Precio: s/100.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1577993665789",
+      "conditions": "$rango_edad:ADOLESCENTE-JOVEN && $genero_persona:Femenino",
+      "dialog_node": "response_7_1578176774504",
+      "previous_sibling": "response_4_1578005671584"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1577993665789",
+      "variable": "$marcas",
+      "dialog_node": "slot_7_1577997893175",
+      "previous_sibling": "slot_2_1577993665798"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1577993665789",
+      "variable": "$rango_edad",
+      "dialog_node": "slot_2_1577993665798",
+      "previous_sibling": "handler_11_1577993665798"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "PS4",
+            "source": "https://media.playstation.com/is/image/SCEA/playstation-4-slim-vertical-product-shot-01-us-07sep16?$native_t$",
+            "description": "Precio: s/1200.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Afeitador",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/14691815?wid=423&hei=423&qlt=70&crop=0,0,0,0",
+            "description": "Precio: s/150.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1577993665789",
+      "conditions": "$genero_persona:Masculino && $rango_edad:ADOLESCENTE-JOVEN",
+      "dialog_node": "response_8_1578182967621",
+      "previous_sibling": "response_7_1578176774504"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "PORFAVOR DETALLE LO QUE ESTA BUSCANDO"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1577993665789",
+      "event_name": "generic",
+      "dialog_node": "handler_11_1577993665798",
+      "previous_sibling": "response_1_1578185239030"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Afeitador",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/14691815?wid=423&hei=423&qlt=70&crop=0,0,0,0",
+            "description": "Precio: s/150.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1577993665789",
+      "conditions": "$rango_edad:(ADULTO-ADULTO MAYOR) && $genero_persona:Masculino",
+      "dialog_node": "response_4_1578176780908",
+      "previous_sibling": "response_5_1578176778242"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Lavadora LG",
+            "source": "https://apollo-virginia.akamaized.net/v1/files/a2l5hesh88011-PE/image;s=850x0",
+            "description": "Precio: s/1200.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Microondas",
+            "source": "https://home.ripley.com.pe/Attachment/WOP_4/2019192313179/2019192313179-1.jpg",
+            "description": "Precio: s/400.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1577993665789",
+      "conditions": "$rango_edad:(ADULTO-ADULTO MAYOR) && $genero_persona:Femenino",
+      "dialog_node": "response_5_1578176778242",
+      "previous_sibling": "response_7_1578183679669"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Radio LG",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16293837?wid=423&hei=423&qlt=70&crop=0,0,0,0",
+            "description": "Precio: s/1300.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Televisor LG",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16774751_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/1100.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Refrigeradora LG",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/17085805_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/100.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Horno Samsung",
+            "source": " https://falabella.scene7.com/is/image/FalabellaPE/15992684_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/900.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Lavadora",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16203152_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/1150.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1577993665789",
+      "conditions": "$genero_persona:Ambos && $rango_edad:ADOLESCENTE-JOVEN",
+      "dialog_node": "response_7_1578183679669",
+      "previous_sibling": "response_8_1578182967621"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_1_1577993665789",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_12_1577993665798",
+      "previous_sibling": "slot_4_1578176706825"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Televisor LG",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16774751_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/1100.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Refrigeradora LG",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/17085805_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/100.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Lavadora",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16203152_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/1150.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Secadora",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16274797_1?$producto308$&wid=800&hei=800&qlt=70",
+            "description": "Precio: s/1150.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1577993665789",
+      "conditions": "$rango_edad:(ADULTO-ADULTO MAYOR) && $genero_persona:Ambos",
+      "dialog_node": "response_1_1578185239030",
+      "previous_sibling": "response_4_1578176780908"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1577993665789",
+      "variable": "$genero_persona",
+      "dialog_node": "slot_4_1578176706825",
+      "previous_sibling": "slot_7_1577997893175"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Extractor de leche  ",
+            "source": "https://i.linio.com/p/34944519a216f6e4569fa1462cdfdb77-product.jpg",
+            "description": "Precio: s/80.00",
+            "response_type": "image"
+          },
+          {
+            "title": "VIGILADOR DE BEBE",
+            "source": "https://images-eu.ssl-images-amazon.com/images/I/414l54g64PL._AC_UL250_SR250,250_.jpg",
+            "description": "Precio: s/800.00 ",
+            "response_type": "image"
+          },
+          {
+            "title": "Esterilizador ",
+            "source": "https://http2.mlstatic.com/calentador-de-botellas-de-bebe-esterilizador-de-botellas-D_NQ_NP_786189-MPE32749700540_112019-V.webp",
+            "description": "Precio: s/300.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Intercomunicador ",
+            "source": "https://planetadelbebe.com/wp-content/uploads/2018/04/Vigilabeb%C3%A9s-Phillips-Avent-1016x1024.jpg",
+            "description": "Precio: s/500.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1577993665789",
+      "conditions": "$rango_edad:BEBE-NINO",
+      "dialog_node": "response_4_1578005671584"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "> 1 Litro",
+                "value": {
+                  "input": {
+                    "text": ">1Litro"
+                  }
+                }
+              },
+              {
+                "label": "< 1 Litro",
+                "value": {
+                  "input": {
+                    "text": "<1Litro"
+                  }
+                }
+              }
+            ],
+            "description": "Presentacion de bebida",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_24_1578280594673",
+      "event_name": "focus",
+      "dialog_node": "handler_26_1578280594673",
+      "previous_sibling": "handler_25_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_24_1578280594673",
+      "context": {
+        "tamaño_bebida": "@tamaño_bebida"
+      },
+      "conditions": "@tamaño_bebida",
+      "event_name": "input",
+      "dialog_node": "handler_25_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Calidad",
+                "value": {
+                  "input": {
+                    "text": "Calidad"
+                  }
+                }
+              },
+              {
+                "label": "Precio",
+                "value": {
+                  "input": {
+                    "text": "Precio"
+                  }
+                }
+              }
+            ],
+            "description": "Que es mas importante para usted en una computadora, calidad o precio",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_4_1578232180828",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1578232180836",
+      "previous_sibling": "handler_4_1578232180836"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1578232180828",
+      "context": {
+        "importante_compu": "@importante_compu"
+      },
+      "conditions": "@importante_compu",
+      "event_name": "input",
+      "dialog_node": "handler_4_1578232180836"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Bebe - Niño",
+                "value": {
+                  "input": {
+                    "text": "Bebe - Niño"
+                  }
+                }
+              },
+              {
+                "label": "Joven - Adulto ",
+                "value": {
+                  "input": {
+                    "text": "Adulto - Adulto mayor"
+                  }
+                }
+              }
+            ],
+            "description": "Dentro de que rango de edad se encuentra",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1578185738702",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1578185738702",
+      "previous_sibling": "handler_3_1578185738702"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1578185738702",
+      "context": {
+        "rango_edad": "@rango_edad"
+      },
+      "conditions": "@rango_edad",
+      "event_name": "input",
+      "dialog_node": "handler_3_1578185738702"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Dentro de que rango de edad se encuentra:",
+            "options": [
+              {
+                "label": "Bebe - Niño",
+                "value": {
+                  "input": {
+                    "text": "BEBE-NINO"
+                  }
+                }
+              },
+              {
+                "label": "Adolescente - Joven",
+                "value": {
+                  "input": {
+                    "text": "ADOLESCENTE-JOVEN"
+                  }
+                }
+              },
+              {
+                "label": "Adulto - Adulto mayor",
+                "value": {
+                  "input": {
+                    "text": "ADULTO-ADULTO MAYOR"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_5_1578001862475",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1578001862483",
+      "previous_sibling": "handler_10_1578001862483"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1578001862475",
+      "context": {
+        "rango_edad": "@rango_edad"
+      },
+      "conditions": "@rango_edad",
+      "event_name": "input",
+      "dialog_node": "handler_10_1578001862483"
+    },
+    {
+      "type": "frame",
+      "title": "electrodomestico",
+      "output": {},
+      "parent": "node_6_1568558809584",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@productos_tecnologia:electrodomesticos",
+      "dialog_node": "node_1_1577993665789",
+      "previous_sibling": "node_1_1578185738695"
+    },
+    {
+      "type": "frame",
+      "title": "computadoras",
+      "output": {},
+      "parent": "node_6_1568558809584",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@productos_tecnologia:computadoras",
+      "dialog_node": "node_1_1578185738695"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Piña",
+            "source": "https://plazavea.vteximg.com.br/arquivos/ids/190980-220-220/977783.jpg?v=636383331947770000",
+            "description": "",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1578280594673",
+      "conditions": "$formato_fruta: paquete&& $importante_frutas:citricos",
+      "dialog_node": "response_19_1578280594673",
+      "previous_sibling": "response_18_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "PORFAVOR DETALLE LO QUE ESTA BUSCANDO"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1578280594673",
+      "event_name": "generic",
+      "dialog_node": "handler_12_1578280594673",
+      "previous_sibling": "response_19_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Almendra",
+            "source": " https://wongfood.vteximg.com.br/arquivos/ids/284253-750-750/Almendras-Naturales-Wong-x-kg-1-40047.jpg?v=636895429132130000",
+            "description": " ",
+            "response_type": "image"
+          },
+          {
+            "title": "Pasas Rubias",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/206401-1000-1000/4707-01-112565.jpg?v=636524280195270000",
+            "description": " ",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1578280594673",
+      "conditions": "$formato_fruta:paquete && $importante_frutas:(frutos secos)",
+      "dialog_node": "response_17_1578280594673",
+      "previous_sibling": "response_16_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Piña",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/10162520?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": " ",
+            "response_type": "image"
+          },
+          {
+            "title": "Granadilla",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/165274/Granadilla-Extra-Wong-1-7191.jpg?v=636415351326500000",
+            "description": " ",
+            "response_type": "image"
+          },
+          {
+            "title": "Naranja Tangelo",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/10162032?$S7Product$&wid=458&hei=458&op_sharpen=0",
+            "description": " ",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1578280594673",
+      "conditions": "$formato_fruta:unidad && $importante_frutas:citricos",
+      "dialog_node": "response_16_1578280594673",
+      "previous_sibling": "response_15_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Datiles",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/228253/543010-01-6701.jpg?v=636651252330630000",
+            "description": " ",
+            "response_type": "image"
+          },
+          {
+            "title": "Fresaas",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/41314030?$S7Product$&wid=458&hei=458&op_sharpen=0",
+            "description": " ",
+            "response_type": "image"
+          },
+          {
+            "title": "Sandia",
+            "source": "https://plazavea.vteximg.com.br/arquivos/ids/197632-220-220/20116576.jpg?v=636625234115200000",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1578280594673",
+      "conditions": "$formato_fruta: paquete&& $importante_frutas:dulces",
+      "dialog_node": "response_18_1578280594673",
+      "previous_sibling": "response_17_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_2_1578280594673",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_13_1578280594673",
+      "previous_sibling": "slot_6_1578280594673"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1578280594673",
+      "variable": "$formato_fruta",
+      "dialog_node": "slot_3_1578280594673",
+      "previous_sibling": "handler_12_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Uva",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/41035129?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": " ",
+            "response_type": "image"
+          },
+          {
+            "title": "Melocoton",
+            "source": "https://plazavea.vteximg.com.br/arquivos/ids/226398-220-220/62015.jpg?v=636977074017700000",
+            "description": " ",
+            "response_type": "image"
+          },
+          {
+            "title": "Papaya",
+            "source": "https://plazavea.vteximg.com.br/arquivos/ids/182396-220-220/924003.jpg?v=636117143029130000",
+            "response_type": "image"
+          },
+          {
+            "title": "Manzana",
+            "source": "https://plazavea.vteximg.com.br/arquivos/ids/177229-220-220/20064830.jpg?v=635864717384230000",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1578280594673",
+      "conditions": "$formato_fruta:unidad && $importante_frutas:dulces",
+      "dialog_node": "response_15_1578280594673",
+      "previous_sibling": "response_14_1578280594673"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1578280594673",
+      "variable": "$importante_frutas",
+      "dialog_node": "slot_6_1578280594673",
+      "previous_sibling": "slot_3_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Palta",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/212582-1000-1000/Palta-Fuerte-x-kg-PALTA-FUERTE-1-29557.jpg?v=636568071922100000",
+            "description": "",
+            "response_type": "image"
+          },
+          {
+            "title": "Coco",
+            "source": "http://biofreshperu.com/wp-content/uploads/2015/03/Coco.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1578280594673",
+      "conditions": "$formato_fruta:unidad && $importante_frutas:(frutos secos)",
+      "dialog_node": "response_14_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Agua",
+                "value": {
+                  "input": {
+                    "text": "agua"
+                  }
+                }
+              },
+              {
+                "label": "Gaseosa",
+                "value": {
+                  "input": {
+                    "text": "gaseosa"
+                  }
+                }
+              },
+              {
+                "label": "Jugos",
+                "value": {
+                  "input": {
+                    "text": "jugo"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_21_1578280594673",
+      "event_name": "focus",
+      "dialog_node": "handler_23_1578280594673",
+      "previous_sibling": "handler_22_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_21_1578280594673",
+      "context": {
+        "categoria_bebida": "@categoria_bebida"
+      },
+      "conditions": "@categoria_bebida",
+      "event_name": "input",
+      "dialog_node": "handler_22_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_20_1578280594673",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_31_1578280594673",
+      "previous_sibling": "slot_24_1578280594673"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_20_1578280594673",
+      "variable": "$categoria_bebida",
+      "dialog_node": "slot_21_1578280594673",
+      "previous_sibling": "handler_30_1578280594673"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_20_1578280594673",
+      "variable": "$tamaño_bebida",
+      "dialog_node": "slot_24_1578280594673",
+      "previous_sibling": "slot_21_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Cifrut 3L",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/40130839?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/6.90",
+            "response_type": "image"
+          },
+          {
+            "title": "Tampico 3.78L",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/20038731?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/9.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Frugos 1.5L",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/40065244?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/3.90",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_20_1578280594673",
+      "conditions": "$tamaño_bebida:>1Litro && $categoria_bebida:jugo",
+      "dialog_node": "response_34_1578280594673",
+      "previous_sibling": "response_33_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Agua Mineral San Mateo",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/223059/frontal-4614.jpg?v=636621768132730000",
+            "description": "Precio: s/1.65",
+            "response_type": "image"
+          },
+          {
+            "title": "Agua Ozonisada",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/319682/762982-1.jpg?v=637051343474670000",
+            "description": "Precio: s/3.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_20_1578280594673",
+      "conditions": "$tamaño_bebida:<1Litro && $categoria_bebida:agua",
+      "dialog_node": "response_35_1578280594673",
+      "previous_sibling": "response_34_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Pack Gaseosa 300ml",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/41256322?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/14.90",
+            "response_type": "image"
+          },
+          {
+            "title": "Concordia Piña",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/10166534?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/1.50",
+            "response_type": "image"
+          },
+          {
+            "title": "Coca Cola",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/41253855?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "s/3.50",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_20_1578280594673",
+      "conditions": "$tamaño_bebida:<1Litro && $categoria_bebida:gaseosa",
+      "dialog_node": "response_36_1578280594673",
+      "previous_sibling": "response_35_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Chicha Morada",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/40604907?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/2.90",
+            "response_type": "image"
+          },
+          {
+            "title": "Bebida de Manzana",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/41123299?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/2.50",
+            "response_type": "image"
+          },
+          {
+            "title": "Pack Jugo de durazno",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/41216028?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "s/6.90",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_20_1578280594673",
+      "conditions": "$tamaño_bebida:<1Litro && $categoria_bebida:jugo",
+      "dialog_node": "response_37_1578280594673",
+      "previous_sibling": "response_36_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Kola Real",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/10163156?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/5.50",
+            "response_type": "image"
+          },
+          {
+            "title": "Pepsi 1.5L",
+            "source": "https://s7d2.scene7.com/is/image/TottusPE/41575396?$S7Product$&wid=129&hei=129&op_sharpen=0",
+            "description": "Precio: s/3.50",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_20_1578280594673",
+      "conditions": "$tamaño_bebida:>1Litro && $categoria_bebida:gaseosa",
+      "dialog_node": "response_33_1578280594673",
+      "previous_sibling": "response_32_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "PORFAVOR DETALLE LO QUE ESTA BUSCANDO"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_20_1578280594673",
+      "event_name": "generic",
+      "dialog_node": "handler_30_1578280594673",
+      "previous_sibling": "response_37_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Agua San Luis Caja 20 L",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/222923/frontal-4835.jpg?v=636621012826070000",
+            "description": " s/22.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Agua San Mateo 2.5L",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/223076/frontal-4803.jpg?v=636621768226330000",
+            "description": " s/4.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Agua Cielo 7L",
+            "source": "https://wongfood.vteximg.com.br/arquivos/ids/222952-1000-1000/286135-01-8023.jpg?v=636621552794900000",
+            "description": " s/6.90",
+            "response_type": "image"
+          },
+          {
+            "title": "Intercomunicador ",
+            "source": "https://planetadelbebe.com/wp-content/uploads/2018/04/Vigilabeb%C3%A9s-Phillips-Avent-1016x1024.jpg",
+            "description": "Precio: s/500.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_20_1578280594673",
+      "conditions": "$tamaño_bebida:>1Litro && $categoria_bebida:agua",
+      "dialog_node": "response_32_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Bebe - Niño",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Adolescente - Joven",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Adulto - Adulto mayor",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "Dentro de que rango de edad se encuentra",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1577993665798",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1577993665798",
+      "previous_sibling": "handler_3_1577993665798"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1577993665798",
+      "context": {
+        "rango_edad": "@rango_edad"
+      },
+      "conditions": "@rango_edad",
+      "event_name": "input",
+      "dialog_node": "handler_3_1577993665798"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Que tal $name.",
+            "options": [
+              {
+                "label": "Lima",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Ayacucho",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Arequipa",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Cajamarca",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "En que ciudad se encuentra, seleccione la adecuada.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1578288673114",
+      "context": {
+        "name": "@sys-person"
+      },
+      "disabled": true,
+      "conditions": "#agradecer",
+      "dialog_node": "response_3_1578288673114"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "El  producto sera para que género de persona:",
+            "options": [
+              {
+                "label": "Femenino",
+                "value": {
+                  "input": {
+                    "text": "Femenino"
+                  }
+                }
+              },
+              {
+                "label": "Masculino",
+                "value": {
+                  "input": {
+                    "text": "Masculino"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_6_1578000287432",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1578000287439",
+      "previous_sibling": "handler_1_1578000287439"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1578000287432",
+      "context": {
+        "genero_persona": "@genero_persona"
+      },
+      "conditions": "@genero_persona",
+      "event_name": "input",
+      "dialog_node": "handler_1_1578000287439"
+    },
+    {
+      "type": "standard",
+      "title": "Diferentes a sys",
+      "output": {
+        "generic": [
+          {
+            "title": "Que tal $name",
+            "options": [
+              {
+                "label": "Lima",
+                "value": {
+                  "input": {
+                    "text": "lima"
+                  }
+                }
+              },
+              {
+                "label": "Arequipa",
+                "value": {
+                  "input": {
+                    "text": "arequipa"
+                  }
+                }
+              },
+              {
+                "label": "Ayacucho",
+                "value": {
+                  "input": {
+                    "text": "ayacucho"
+                  }
+                }
+              },
+              {
+                "label": "Cajarmaca",
+                "value": {
+                  "input": {
+                    "text": "cajamarca"
+                  }
+                }
+              },
+              {
+                "label": "Otro",
+                "value": {
+                  "input": {
+                    "text": "otro"
+                  }
+                }
+              }
+            ],
+            "description": "En que ciudad se encuentra, seleccione la adecuada",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text.substring(0, 1).toUpperCase() + input.text.substring(1) ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1577965812061"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1568097448502",
+      "previous_sibling": "node_1_1568075232177"
+    },
+    {
+      "type": "standard",
+      "title": "Nombres conocidos",
+      "output": {
+        "generic": [
+          {
+            "title": "Que tal $name",
+            "options": [
+              {
+                "label": "Lima",
+                "value": {
+                  "input": {
+                    "text": "lima"
+                  }
+                }
+              },
+              {
+                "label": "Arequipa",
+                "value": {
+                  "input": {
+                    "text": "arequipa"
+                  }
+                }
+              },
+              {
+                "label": "Ayacucho",
+                "value": {
+                  "input": {
+                    "text": "ayacucho"
+                  }
+                }
+              },
+              {
+                "label": "Cajarmaca",
+                "value": {
+                  "input": {
+                    "text": "cajamarca"
+                  }
+                }
+              },
+              {
+                "label": "Otro",
+                "value": {
+                  "input": {
+                    "text": "otro"
+                  }
+                }
+              }
+            ],
+            "description": "En que ciudad se encuentra, seleccione la adecuada",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "@sys-person"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1577965812061"
+      },
+      "conditions": "@sys-person",
+      "dialog_node": "node_1_1568075232177"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Dentro de que rango de edad se encuentra:",
+            "options": [
+              {
+                "label": "Bebe - Niño",
+                "value": {
+                  "input": {
+                    "text": "BEBE-NINO"
+                  }
+                }
+              },
+              {
+                "label": "Adolescente - Joven",
+                "value": {
+                  "input": {
+                    "text": "ADOLESCENTE-JOVEN"
+                  }
+                }
+              },
+              {
+                "label": "Adulto - Adulto mayor",
+                "value": {
+                  "input": {
+                    "text": "ADULTO-ADULTO MAYOR"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1578002167481",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1578002167509",
+      "previous_sibling": "handler_6_1578002167509"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1578002167481",
+      "context": {
+        "rango_edad": "@rango_edad"
+      },
+      "conditions": "@rango_edad",
+      "event_name": "input",
+      "dialog_node": "handler_6_1578002167509"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1578185738695",
+      "variable": "$importante_compu",
+      "dialog_node": "slot_4_1578232180828",
+      "previous_sibling": "slot_3_1578231645912"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1578185738695",
+      "variable": "$rango_edad",
+      "conditions": "(event.previous_value != null) &&            (event.previous_value != event.current_value)     Response: Ok, updating destination from     <? event.previous_value ?> to <? event.current_value ?>. Response: Ok, destination is $destination.",
+      "dialog_node": "slot_2_1578185738702",
+      "previous_sibling": "slot_4_1578232180828"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_1_1578185738695",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_12_1578185738702",
+      "previous_sibling": "slot_2_1578185738702"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "PORFAVOR DETALLE LO QUE ESTA BUSCANDO"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1578185738695",
+      "event_name": "generic",
+      "dialog_node": "handler_11_1578185738702",
+      "previous_sibling": "response_9_1578287817387"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Computadora Baby kingdom",
+            "source": "https://http2.mlstatic.com/computadora-juego-juguete-para-D_NQ_NP_233705-MLA25073009067_092016-F.jpg",
+            "description": "Precio: s/160.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Laptop",
+            "source": "https://smhttp-ssl-54375.nexcesscdn.net/media/catalog/product/cache/3/image/800x800/9df78eab33525d08d6e5fb8d27136e95/_/1/_10.10.1.125_Proyectos_Magento_imagenes_27084963793.jpg.jpg",
+            "description": "Precio: s/200.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1578185738695",
+      "conditions": "$rango_edad:BEBE-NINO && $importante_compu:calidad",
+      "dialog_node": "response_13_1578185738702",
+      "previous_sibling": "response_15_1578185738702"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Pc Todo En Uno Ci7 ",
+            "source": "https://http2.mlstatic.com/pc-todo-en-uno-ci7-aiohplenovo-business-4ta-ge-20-full-hd-D_NQ_NP_864907-MPE40094848521_122019-V.webp",
+            "description": "Precio: s/1200.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Computadora Completa Hp Core I7",
+            "source": "https://http2.mlstatic.com/computadora-completa-hp-core-i7-empresarial-4gb-tec-y-mou-D_NQ_NP_815221-MPE40094847996_122019-V.webp",
+            "description": "Precio: s/1200.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1578185738695",
+      "conditions": "$tipo_compu:escritorio && $importante_compu:calidad",
+      "dialog_node": "response_7_1578247880808",
+      "previous_sibling": "response_3_1578247865193"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Cpu Empresarial Hp/ Lenovo Desk",
+            "source": "https://http2.mlstatic.com/cpu-empresarial-hp-lenovo-desk-core-i5-4gb-500gbdvd-rw-D_NQ_NP_625806-MPE40094845890_122019-V.webp",
+            "description": "Precio: s/679.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Computadora Business Hp6305 Amd 3ra Ge ",
+            "source": "https://http2.mlstatic.com/computadora-business-hp6305-amd-3ra-ge-completa-monitor-lcd-D_NQ_NP_768664-MPE31253471698_062019-V.webp",
+            "description": "Precio: s/600.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1578185738695",
+      "conditions": "$tipo_compu:escritorio && $importante_compu:precio",
+      "dialog_node": "response_3_1578247865193",
+      "previous_sibling": "response_3_1578246387956"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1578185738695",
+      "dialog_node": "response_9_1578287817387",
+      "previous_sibling": "response_7_1578247880808"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Laptop Pavilion 2en1 14\" Core i7 8GB RAM ",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16258595?wid=544&hei=544&qlt=70&anchor=750,750&crop=0,0,0,0",
+            "description": "Precio: s/3329.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Laptop Gamer GL63 8RE-639 15.6\" Core i7",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/17138716?wid=544&hei=544&qlt=70&anchor=750,750&crop=0,0,0,0",
+            "description": "Precio: s/4999.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Laptop Ideapad S340 15.6\" Core i7",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/881658716?wid=544&hei=544&qlt=70&anchor=750,750&crop=0,0,0,0",
+            "description": "Precio: s/2289.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1578185738695",
+      "conditions": "$tipo_compu:portatil && $importante_compu:calidad",
+      "dialog_node": "response_3_1578246387956",
+      "previous_sibling": "response_8_1578246223511"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1578185738695",
+      "variable": "$tipo_compu",
+      "dialog_node": "slot_3_1578231645912",
+      "previous_sibling": "handler_11_1578185738702"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Laptop 14pulgadas Core i3",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/16705638?wid=544&hei=544&qlt=70&anchor=750,750&crop=0,0,0,0",
+            "description": "Precio: s/1099.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Laptop Ideapad S145 ",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/881759862?wid=544&hei=544&qlt=70&anchor=750,750&crop=0,0,0,0",
+            "description": "Precio: s/1199.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Laptop VivoBook F512DA-WH31 ",
+            "source": "https://falabella.scene7.com/is/image/FalabellaPE/17164554?wid=544&hei=544&qlt=70&anchor=750,750&crop=0,0,0,0",
+            "description": "Precio: s/1199.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1578185738695",
+      "conditions": "$tipo_compu:portatil && $importante_compu:precio",
+      "dialog_node": "response_8_1578246223511",
+      "previous_sibling": "response_13_1578185738702"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Computadora e-school",
+            "source": "http://g01.a.alicdn.com/kf/HTB1YudiIFXXXXaLaXXXq6xXFXXX2/Aprendizaje-ingl%25C3%25A9s-m%25C3%25A1quina-computadora-de-la-tabla-juguetes-de-aprendizaje-de-educaci%25C3%25B3n-para-ni%25C3%25B1os-Childern-beb%25C3%25A9.jpg",
+            "description": "Precio: s/120.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Computadora ",
+            "source": "https://http2.mlstatic.com/vendo-computadora-didactica-fisher-price-D_NQ_NP_748372-MPE29274640789_012019-V.webp",
+            "description": "Precio: s/70.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1578185738695",
+      "conditions": "$rango_edad:BEBE-NINO && $importante_compu:precio",
+      "dialog_node": "response_15_1578185738702"
+    },
+    {
+      "type": "standard",
+      "title": "Viveres",
+      "output": {},
+      "parent": "node_8_1577968990720",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$categoria:viveres",
+      "dialog_node": "node_1_1578280594670",
+      "previous_sibling": "node_6_1568558809584"
+    },
+    {
+      "type": "frame",
+      "title": "Ropa",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1577968990720",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$categoria:ropa",
+      "dialog_node": "node_9_1568558806908",
+      "previous_sibling": "handler_1_1577979863690"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "De los siguientes productos cuál desea:",
+            "options": [
+              {
+                "label": "Electrodomesticos",
+                "value": {
+                  "input": {
+                    "text": "electrodomesticos"
+                  }
+                }
+              },
+              {
+                "label": "Computadoras",
+                "value": {
+                  "input": {
+                    "text": "computadoras"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1577968990720",
+      "conditions": "$categoria:tecnologia",
+      "dialog_node": "response_5_1577992672418",
+      "previous_sibling": "response_6_1577991981420"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1577968990720",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1577979863690",
+      "previous_sibling": "response_6_1577993179496"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "De los siguientes productos cuál desea:",
+            "options": [
+              {
+                "label": "Frutas",
+                "value": {
+                  "input": {
+                    "text": "Frutas"
+                  }
+                }
+              },
+              {
+                "label": "Bebidas",
+                "value": {
+                  "input": {
+                    "text": "Bebidas"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1577968990720",
+      "conditions": "$categoria:viveres",
+      "dialog_node": "response_6_1577993179496",
+      "previous_sibling": "response_5_1577992672418"
+    },
+    {
+      "type": "standard",
+      "title": "Tecnologia",
+      "parent": "node_8_1577968990720",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$categoria:tecnologia",
+      "dialog_node": "node_6_1568558809584",
+      "previous_sibling": "node_9_1568558806908"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1577968990720",
+      "variable": "$categoria",
+      "dialog_node": "slot_2_1577969356819",
+      "previous_sibling": "node_1_1578280594670"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "De los siguientes productos cuál desea:",
+            "options": [
+              {
+                "label": "Polos",
+                "value": {
+                  "input": {
+                    "text": "polos"
+                  }
+                }
+              },
+              {
+                "label": "Jeans",
+                "value": {
+                  "input": {
+                    "text": "jeans"
+                  }
+                }
+              },
+              {
+                "label": "Formal",
+                "value": {
+                  "input": {
+                    "text": "formal"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1577968990720",
+      "conditions": "$categoria:ropa",
+      "dialog_node": "response_6_1577991981420"
+    },
+    {
+      "type": "standard",
+      "title": "GOOD BYE",
+      "output": {
+        "text": {
+          "values": [
+            "\nUn placer hablar con usted hoy, $name.",
+            "Que tenga un buen día.",
+            "Hasta luego."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1568055942153",
+      "conditions": "#despedida",
+      "dialog_node": "node_10_1568056011285",
+      "previous_sibling": "node_7_1568056008654"
+    },
+    {
+      "type": "standard",
+      "title": "THANKS",
+      "output": {
+        "text": {
+          "values": [
+            "De nada. Por favor, hágame saber si necesita algo más.",
+            "No hay problema. Avíseme si hay algo más en lo que pueda ayudar.",
+            "El gusto es mio. Si tiene alguna duda adicional estaré aquí para poder apoyarlo."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_6_1568055942153",
+      "conditions": "#agradecer",
+      "dialog_node": "node_7_1568056008654",
+      "previous_sibling": "node_5_1568056001470"
+    },
+    {
+      "type": "standard",
+      "title": "GREETINGS",
+      "output": {
+        "text": {
+          "values": [
+            "Hola"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1568055942153",
+      "conditions": "#saludo",
+      "dialog_node": "node_5_1568056001470"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1577984224714",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1577984224719",
+      "previous_sibling": "handler_8_1577984224719"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1577984224714",
+      "context": {
+        "location": "@location"
+      },
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_8_1577984224719"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "¿Cuál es tu tono de color favorito?",
+            "options": [
+              {
+                "label": "Colorido",
+                "value": {
+                  "input": {
+                    "text": "Colorido"
+                  }
+                }
+              },
+              {
+                "label": "Oscuro",
+                "value": {
+                  "input": {
+                    "text": "Oscuro"
+                  }
+                }
+              },
+              {
+                "label": "Claro",
+                "value": {
+                  "input": {
+                    "text": "Claro"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1578002003929",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1578002003936",
+      "previous_sibling": "handler_10_1578002003936"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1578002003929",
+      "context": {
+        "ropa_color": "@ropa_color"
+      },
+      "conditions": "@ropa_color",
+      "event_name": "input",
+      "dialog_node": "handler_10_1578002003936"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_9_1568612542127",
+      "output": {
+        "generic": [
+          {
+            "title": "Dentro de que rango de edad se encuentra:",
+            "options": [
+              {
+                "label": "Bebe - Niño",
+                "value": {
+                  "input": {
+                    "text": "BEBE-NINO"
+                  }
+                }
+              },
+              {
+                "label": "Adolescente - Joven",
+                "value": {
+                  "input": {
+                    "text": "ADOLESCENTE-JOVEN"
+                  }
+                }
+              },
+              {
+                "label": "Adulto - Adulto mayor",
+                "value": {
+                  "input": {
+                    "text": "ADULTO-ADULTO MAYOR"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1568612885535",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1568612885535",
+      "previous_sibling": "handler_4_1568612885535"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_6_1568612542127",
+      "output": {},
+      "parent": "slot_3_1568612885535",
+      "context": {
+        "rango_edad": "@rango_edad"
+      },
+      "conditions": "@rango_edad",
+      "event_name": "input",
+      "dialog_node": "handler_4_1568612885535"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Que tal $name.",
+            "options": [
+              {
+                "label": "Lima",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Ayacucho",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Arequipa",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Cajamarca",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "En que ciudad se encuentra, seleccione la adecuada.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1568075232177",
+      "context": {
+        "name": "@sys-person"
+      },
+      "disabled": true,
+      "conditions": "#agradecer",
+      "dialog_node": "response_5_1577952152748"
+    },
+    {
+      "type": "frame",
+      "title": "Formal",
+      "parent": "node_9_1568558806908",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@productos_ropa:Formal",
+      "dialog_node": "node_1_1577994966050",
+      "previous_sibling": "node_31_1568617190785"
+    },
+    {
+      "type": "frame",
+      "title": "Pantalones",
+      "output": {},
+      "parent": "node_9_1568558806908",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@productos_ropa:Pantalones",
+      "dialog_node": "node_31_1568617190785",
+      "previous_sibling": "node_2_1568612885528"
+    },
+    {
+      "type": "frame",
+      "title": "Polos",
+      "parent": "node_9_1568558806908",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@productos_ropa:Polos",
+      "dialog_node": "node_2_1568612885528"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Mujer",
+                "value": {
+                  "input": {
+                    "text": "femenino"
+                  }
+                }
+              },
+              {
+                "label": "Varon",
+                "value": {
+                  "input": {
+                    "text": "masculino"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_4_1578176706825",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1578176706835",
+      "previous_sibling": "handler_2_1578176706835"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1578176706825",
+      "context": {
+        "genero_persona": "@genero_persona"
+      },
+      "conditions": "@genero_persona",
+      "event_name": "input",
+      "dialog_node": "handler_2_1578176706835"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_31_1568617190785",
+      "variable": "$genero_persona",
+      "dialog_node": "slot_3_1578001927662",
+      "previous_sibling": "slot_5_1578001862475"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_1_1568602543763",
+      "output": {},
+      "parent": "node_31_1568617190785",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_42_1568617190792",
+      "previous_sibling": "slot_7_1578002003929"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_31_1568617190785",
+      "variable": "$ropa_color",
+      "dialog_node": "slot_7_1578002003929",
+      "previous_sibling": "slot_3_1578001927662"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_31_1568617190785",
+      "variable": "$rango_edad",
+      "dialog_node": "slot_5_1578001862475"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "El  producto sera para que género de persona:",
+            "options": [
+              {
+                "label": "Femenino",
+                "value": {
+                  "input": {
+                    "text": "Femenino"
+                  }
+                }
+              },
+              {
+                "label": "Masculino",
+                "value": {
+                  "input": {
+                    "text": "Masculino"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1578002236095",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1578002236105",
+      "previous_sibling": "handler_10_1578002236105"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1578002236095",
+      "context": {
+        "genero_persona": "@genero_persona"
+      },
+      "conditions": "@genero_persona",
+      "event_name": "input",
+      "dialog_node": "handler_10_1578002236105"
+    },
+    {
+      "type": "frame",
+      "title": "bebidas",
+      "output": {},
+      "parent": "node_1_1578280594670",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@categoria_viveres:Bebidas",
+      "dialog_node": "node_20_1578280594673",
+      "previous_sibling": "node_2_1578280594673"
+    },
+    {
+      "type": "frame",
+      "title": "frutas",
+      "output": {},
+      "parent": "node_1_1578280594670",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@categoria_viveres:frutas",
+      "dialog_node": "node_2_1578280594673",
+      "previous_sibling": "response_2_1578282651278"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1578280594670",
+      "conditions": "",
+      "dialog_node": "response_2_1578282651278"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Dulces",
+                "value": {
+                  "input": {
+                    "text": "dulces"
+                  }
+                }
+              },
+              {
+                "label": "Citricos",
+                "value": {
+                  "input": {
+                    "text": "Citricos"
+                  }
+                }
+              },
+              {
+                "label": "Frutos Secos",
+                "value": {
+                  "input": {
+                    "text": "frutos secos"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_6_1578280594673",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1578280594673",
+      "previous_sibling": "handler_7_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1578280594673",
+      "context": {
+        "importante_frutas": "@importante_frutas"
+      },
+      "conditions": "@importante_frutas",
+      "event_name": "input",
+      "dialog_node": "handler_7_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Polo manga corta",
+            "source": "https://codelin.vteximg.com.br/arquivos/ids/169683-1000-1000/POLO-LEONARDO-AZUL-OSCURO-BEBE-NI%C3%91O-CODELIN-230007-B-FRENTE.jpg?v=636904361898270000",
+            "description": "S/. 70.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga larga",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/71Y0UydAM9L._UY606_.jpg",
+            "description": "S/. 120.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1568612885528",
+      "conditions": "$rango_edad:BEBE-NINO && $genero_persona:Masculino && $ropa_color:Oscuro",
+      "dialog_node": "response_5_1578064477369",
+      "previous_sibling": "response_2_1578064457496"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Polo manga corta",
+            "source": "https://www.dhresource.com/0x0s/f2-albu-g8-M01-DD-17-rBVaVFw_lbWAf1TKAAPGo_0Av1w039.jpg/calidad-beb-verano-polo-camisa-ni-os-ni-os.jpg",
+            "description": "S/. 50.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga corta",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/61DqqeHTp8L._UX385_.jpg",
+            "description": "S/. 100.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1568612885528",
+      "conditions": "$rango_edad:BEBE-NINO && $genero_persona:Masculino && $ropa_color:Colorido",
+      "dialog_node": "response_2_1578064457496",
+      "previous_sibling": "response_5_1578003979740"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1568612885528",
+      "variable": "$ropa_color",
+      "dialog_node": "slot_8_1578000578053",
+      "previous_sibling": "slot_6_1578000287432"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1568612885528",
+      "variable": "$genero_persona",
+      "dialog_node": "slot_6_1578000287432",
+      "previous_sibling": "slot_3_1568612885535"
+    },
+    {
+      "type": "slot",
+      "title": "slot_9_1568612542110",
+      "output": {},
+      "parent": "node_2_1568612885528",
+      "variable": "$rango_edad",
+      "dialog_node": "slot_3_1568612885535",
+      "previous_sibling": "response_1_1578064486468"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Polo manga corta",
+            "source": "https://colgrampe.vteximg.com.br/arquivos/ids/366414-400-400/V19P2JE1030_1.jpg?v=637019241864600000",
+            "description": "S/ 40.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga corta",
+            "source": "https://i.pinimg.com/236x/b2/90/39/b290399d2cecaa106bf7daf54927f8ca.jpg",
+            "description": "S/ 70.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga larga",
+            "source": "https://static.carrefour.es/hd_350x_/crs/cdn_static/catalog/hd/161844_01_2.jpg",
+            "description": "S/ 130.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga corta",
+            "source": "https://contents.mediadecathlon.com/p1629129/k$1eb669a833e88ce59719a74005317f36/sq/POLO+GOLF+MUJER+ROSA+PALO.jpg",
+            "description": "S/ 140.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1568612885528",
+      "conditions": "$rango_edad:BEBE-NINO && $genero_persona:Femenino && $ropa_color:Claro",
+      "dialog_node": "response_5_1578003979740",
+      "previous_sibling": "response_1_1578003966779"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Polo manga corta",
+            "source": "http://www.digitalgrainstudios.com/images/pic/37958978dr-verdeclaro.jpg",
+            "description": "S/. 75.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga larga",
+            "source": "https://static.glami.es/img/204963613.jpg",
+            "description": "S/. 120.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1568612885528",
+      "conditions": "$rango_edad:BEBE-NINO && $genero_persona:Masculino && $ropa_color:Claro",
+      "dialog_node": "response_1_1578064486468",
+      "previous_sibling": "response_5_1578064477369"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Polo manga corta",
+            "source": "https://i.pinimg.com/originals/0f/94/6d/0f946d2c6b669cb08cf08aacfdf18d8e.jpg",
+            "description": "S/. 60.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga corta",
+            "source": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201802/13/00169510019586____1__516x640.jpg",
+            "description": "S/. 80.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga larga",
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRbeI_1j7IQmGcJUFQlYITFXMQPv0A1lD2xRhyO8b3SfHCQyE4TA&s",
+            "description": "S/. 120.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Polo manga corta",
+            "source": "https://assets.adidas.com/images/w_385,h_385,f_auto,q_auto:sensitive,fl_lossy/f30641daffd247afa6a9aa4f01243c1f_9366/polo.jpg",
+            "description": "S/. 150.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1568612885528",
+      "conditions": "$rango_edad:BEBE-NINO && $genero_persona:Femenino && $ropa_color:Oscuro",
+      "dialog_node": "response_1_1578003966779",
+      "previous_sibling": "response_7_1578003817931"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Conjunto ropa",
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5ms7VB6ElW_FFXnAlZYHyNgFSsF52duLSIUG40x6HDZR4k7i&s",
+            "description": "S/. 100.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Conjunto ropa",
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDbmo5zACiK6UrUSypVtVpZrD5tzs6i2Yu27hX7VjGbAtyTC7E&s",
+            "description": "S/. 50.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Conjunto ropa",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/81cv3PeJQZL._UY445_.jpg",
+            "description": "S/. 80.00",
+            "response_type": "image"
+          },
+          {
+            "title": "Conjunto ropa",
+            "source": "https://cdn.fashiola.mx/L528128317/newchic-las-ninas-pequenas-impresas-florales-amarillas-del-hombro-de-la-ropa-del-verano-fijaron-el-top-shorts-para-2y-9y.jpg",
+            "description": "S/. 90.00",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1568612885528",
+      "conditions": "$rango_edad:BEBE-NINO && $genero_persona:Femenino && $ropa_color:Colorido",
+      "dialog_node": "response_7_1578003817931"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Unidad",
+                "value": {
+                  "input": {
+                    "text": "unidad"
+                  }
+                }
+              },
+              {
+                "label": "xKilo",
+                "value": {
+                  "input": {
+                    "text": "paquete"
+                  }
+                }
+              }
+            ],
+            "description": "Elija la mejor opcion",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1578280594673",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1578280594673",
+      "previous_sibling": "handler_4_1578280594673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1578280594673",
+      "context": {
+        "formato_fruta": "@formato_fruta"
+      },
+      "conditions": "@formato_fruta",
+      "event_name": "input",
+      "dialog_node": "handler_4_1578280594673"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1577994966050",
+      "dialog_node": "response_5_1578002106146",
+      "previous_sibling": "slot_7_1578002427631"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1577994966050",
+      "variable": "$genero_persona",
+      "dialog_node": "slot_3_1578002236095",
+      "previous_sibling": "slot_7_1578002167481"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1577994966050",
+      "variable": "$ropa_color",
+      "dialog_node": "slot_7_1578002427631",
+      "previous_sibling": "slot_3_1578002236095"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1577994966050",
+      "variable": "$rango_edad",
+      "dialog_node": "slot_7_1578002167481"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "LG",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Samsung",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Philips",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "Que marca es de su preferencia",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1577997893175",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1577997893184",
+      "previous_sibling": "handler_6_1577997893184"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1577997893175",
+      "context": {
+        "marcas": "@Marcas"
+      },
+      "conditions": "@Marcas",
+      "event_name": "input",
+      "dialog_node": "handler_6_1577997893184"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1577969356819",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1577969356824",
+      "previous_sibling": "handler_5_1577969356824"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1577969356819",
+      "context": {
+        "categoria": "@categoria"
+      },
+      "conditions": "@categoria",
+      "event_name": "input",
+      "dialog_node": "handler_5_1577969356824"
+    },
+    {
+      "type": "standard",
+      "title": "Diferentes a sys",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que tal $name"
+              },
+              {
+                "text": "Mediante un texto describirá lo que esta buscando, para nosotros recomendar su producto. (Dar un mayor detalle)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1578288673111",
+      "context": {
+        "name": "<? input.text.substring(0, 1).toUpperCase() + input.text.substring(1) ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1578288673114",
+      "previous_sibling": "node_2_1578288673114"
+    },
+    {
+      "type": "standard",
+      "title": "Nombres conocidos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que tal $name"
+              },
+              {
+                "text": "Mediante un texto describirá lo que esta buscando, para nosotros recomendar su producto. (Dar un mayor detalle)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1578288673111",
+      "context": {
+        "name": "@sys-person"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@sys-person",
+      "dialog_node": "node_2_1578288673114"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Ropa",
+                "value": {
+                  "input": {
+                    "text": "ropa"
+                  }
+                }
+              },
+              {
+                "label": "Tecnologia",
+                "value": {
+                  "input": {
+                    "text": "tecnologia"
+                  }
+                }
+              },
+              {
+                "label": "Viveres",
+                "value": {
+                  "input": {
+                    "text": "viveres"
+                  }
+                }
+              }
+            ],
+            "description": "Seleccione la categoria",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1577965812061",
+      "conditions": "$location:ayacucho|| $location:cajamarca || $location:arequipa || $location:lima",
+      "dialog_node": "response_9_1577982794327",
+      "previous_sibling": "slot_2_1577984224714"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Que tal $name",
+            "options": [
+              {
+                "label": "Lima",
+                "value": {
+                  "input": {
+                    "text": "$location"
+                  }
+                }
+              },
+              {
+                "label": "Ayacucho",
+                "value": {
+                  "input": {
+                    "text": "$location"
+                  }
+                }
+              },
+              {
+                "label": "Arequipa",
+                "value": {
+                  "input": {
+                    "text": "$location"
+                  }
+                }
+              },
+              {
+                "label": "Cajamarca",
+                "value": {
+                  "input": {
+                    "text": "$location"
+                  }
+                }
+              }
+            ],
+            "description": "Seleccione en que ciudad se encuentra",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1577965812061",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_1_1577982487751",
+      "previous_sibling": "response_10_1577985158317"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Lo sentimos, no tenemos un local en su ciudad. Pronto llegaremos :)"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1577965812061",
+      "conditions": "$location:otro",
+      "dialog_node": "response_10_1577985158317",
+      "previous_sibling": "response_9_1577982794327"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1577965812061",
+      "variable": "$location",
+      "dialog_node": "slot_2_1577984224714"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "El  producto sera para que género de persona:",
+            "options": [
+              {
+                "label": "Femenino",
+                "value": {
+                  "input": {
+                    "text": "Femenino"
+                  }
+                }
+              },
+              {
+                "label": "Masculino",
+                "value": {
+                  "input": {
+                    "text": "Masculino"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_3_1578001927662",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1578001927671",
+      "previous_sibling": "handler_3_1578001927671"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1578001927662",
+      "context": {
+        "genero_persona": "@genero_persona"
+      },
+      "conditions": "@genero_persona",
+      "event_name": "input",
+      "dialog_node": "handler_3_1578001927671"
+    },
+    {
+      "type": "standard",
+      "dialog_node": "node_1_1578288097625",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "folder",
+      "title": "CHITCHAT",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1568055942153",
+      "previous_sibling": "node_8_1577968990720"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "text": {
+          "values": [
+            "Disculpe no lo entiendo, podría repetirme su consulta por favor.",
+            "$name no te estoy entendiendo. ¿ Puedes reformular tu pregunta?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1568055942153"
+    },
+    {
+      "type": "frame",
+      "title": "ciudad",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@location",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1577965812061",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1578288097625",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenida2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor dígame cual es su nombre."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "@inicio:descripcion",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1578288673111",
+      "previous_sibling": "node_9_1578288188231"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor dígame cual es su nombre."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "@inicio:preguntas",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_1_1578288673111"
+    },
+    {
+      "type": "frame",
+      "title": "categoria",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@categoria",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1577968990720",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1577965812061",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "inicio",
+      "output": {
+        "generic": [
+          {
+            "title": "Bienvenido a METRO DELIVERY",
+            "options": [
+              {
+                "label": "Preguntas",
+                "value": {
+                  "input": {
+                    "text": "preguntas"
+                  }
+                }
+              },
+              {
+                "label": "Descripcion",
+                "value": {
+                  "input": {
+                    "text": "descripcion"
+                  }
+                }
+              }
+            ],
+            "description": "Le ofreceremos los mejores productos según su personalidad  con los mejores descuentos, por favor seleccione la forma en donde quiera hacer la dinámica.",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1578288188231"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "dialogo_2",
+  "language": "es",
+  "description": ""
+}
