@@ -17,8 +17,8 @@ import os
 logging.basicConfig(level=logging.INFO)
 LOG = logging.getLogger(__name__)
 
-default_name = 'insurance-voice-bot'
-default_json = 'data/skill-insurance-voice-bot.json'
+default_name = 'cliente'
+default_json = 'data/skill-cliente.json'
 description = "Assistant workspace created by watson-voice-bot."
 
 

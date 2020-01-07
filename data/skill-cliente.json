@@ -1,0 +1,509 @@
+{
+  "intents": [
+    {
+      "intent": "Saludo",
+      "examples": [
+        {
+          "text": "hola que tal?"
+        },
+        {
+          "text": "Hola, quien me puede atender?"
+        },
+        {
+          "text": "buenas noches"
+        },
+        {
+          "text": "buenos dias"
+        },
+        {
+          "text": "que tal?"
+        },
+        {
+          "text": "buenas tengo algunas preguntas"
+        },
+        {
+          "text": "buenas tardes"
+        },
+        {
+          "text": "Tienes un momento, por favor?"
+        },
+        {
+          "text": "¿Estas ahí?"
+        },
+        {
+          "text": "Sigues aqui?"
+        },
+        {
+          "text": "hola"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "gracias",
+      "examples": [
+        {
+          "text": "gracias"
+        },
+        {
+          "text": "gracias por el consejo"
+        },
+        {
+          "text": "gracias bot"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "muchas gracias"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "preguntas_dudas",
+      "examples": [
+        {
+          "text": "Que flores le puedo dar a mi madre?"
+        },
+        {
+          "text": "Que recomendacion de flores me puede dar?"
+        },
+        {
+          "text": "Que flores puedo llevar a un hospital?"
+        },
+        {
+          "text": "Que flores puedo dar a mi amiga que está en el hospital?"
+        },
+        {
+          "text": "Que flores puedo llevar para mi pariente fallecido?"
+        },
+        {
+          "text": "Que flores puedo darle a mi esposa por nuestro aniversario?"
+        },
+        {
+          "text": "Que flores puedo dar para un aniversario con mi enamorada?"
+        },
+        {
+          "text": "Que tipo de flores le puedo dar a mi amiga por su cumpleaños?"
+        },
+        {
+          "text": "Que tipo de flores le puedo dar a mi mama por el dia de las madres?"
+        },
+        {
+          "text": "Tengo dudas sobre que flores poder comprar para mi esposa"
+        },
+        {
+          "text": "Tengo dudas sobre que flores dar a mi madre"
+        },
+        {
+          "text": "Tengo dudas sobre que flores dar en un funeral"
+        },
+        {
+          "text": "Que tipo de flores son recomendadas para un hospital?"
+        },
+        {
+          "text": "para un aniversario"
+        },
+        {
+          "text": "para mi novia"
+        },
+        {
+          "text": "¿Que flores se puede llevar a un velorio?"
+        },
+        {
+          "text": "para una amiga"
+        },
+        {
+          "text": "No se que flores llevar a un velorio"
+        },
+        {
+          "text": "Quiero darle una flor a mi enamorada, pero no tengo una idea de que darle"
+        },
+        {
+          "text": "Que flores puedo dar para un cumpleaños?"
+        },
+        {
+          "text": "No se que que flores darle a mi madre"
+        },
+        {
+          "text": "Que tipo de flores le puedo dar a mi novia por el dia de los enamorados?"
+        },
+        {
+          "text": "No se que flores darle a mi enamorada por el dia del amor"
+        },
+        {
+          "text": "Que tipo de flores puedo dar en un funeral?"
+        },
+        {
+          "text": "No se que flores dar por el cumpleaños de mi amiga"
+        },
+        {
+          "text": "Quisiera saber que flores tienen"
+        },
+        {
+          "text": "No se que flores dar en un funeral"
+        },
+        {
+          "text": "Tengo dudas sobre que flores dar"
+        },
+        {
+          "text": "Que flores debo dar en un funeral?"
+        },
+        {
+          "text": "No se que flores dar"
+        },
+        {
+          "text": "Que flores le puedo dar a mi enamorada?"
+        },
+        {
+          "text": "Que flores hay ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "preguntas_servicios",
+      "examples": [
+        {
+          "text": "tienen venta de ramo de flores?"
+        },
+        {
+          "text": "tienen en ramo de flores?"
+        },
+        {
+          "text": "que servicio ofrecen?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-percentage",
+      "values": []
+    },
+    {
+      "entity": "ocasion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "hospital",
+          "synonyms": [
+            "enfermo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "aniversario",
+          "synonyms": [
+            "aniversarios",
+            "dia de los enamorados",
+            "tiempo de casados",
+            "novia",
+            "enamorada",
+            "14 de febrero",
+            "dia del amor",
+            "esposa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "funeral",
+          "synonyms": [
+            "fallecido",
+            "fallecida",
+            "muertito",
+            "muerte",
+            "velorio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "madre",
+          "synonyms": [
+            "dia de la madre "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cumpleaños",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_7_1577636678811",
+      "variable": "$ocasion",
+      "dialog_node": "slot_5_1577637179175"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "En una ocasion triste como esta para transmitir respeto y cariño te recomiendo rosas blancas, gladiolos , liliums que muestra condolencia a la familia ."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1577635394404",
+      "conditions": "@ocasion:funeral",
+      "dialog_node": "response_8_1577637850847",
+      "previous_sibling": "response_8_1577637847640"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Las flores que podemos recomendarle son las siguientes :rosa roja, clavel rojo , tulipán rojo, rosa pastel ya que todas ellas muestran el amor puro que sientes por tu ser amado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1577635394404",
+      "context": {
+        "": "",
+        "oaniversario": ""
+      },
+      "conditions": "@ocasion:aniversario",
+      "dialog_node": "response_6_1577635594263",
+      "previous_sibling": "response_4_1577637888153"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Para un hospital es necesario llevar flores que no esten perfumadas, por lo que las flores que te recomiendo son : iris, tulipanes , gladiolos ."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1577635394404",
+      "conditions": "@ocasion:hospital",
+      "dialog_node": "response_8_1577637847640",
+      "previous_sibling": "response_10_1577637846147"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Para un día tan especial para su madre le recomendamos las siguientes flores :girasol,rosa amarilla, rosa  rosa porque cada una de ellas significar el amor especial que siente por su madre."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1577635394404",
+      "conditions": "@ocasion:madre",
+      "dialog_node": "response_10_1577637846147",
+      "previous_sibling": "response_6_1577635594263"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "En una ocasion tan especial como un cumpleaños lo que te recomiendo son las flores lily blanca,anturio , rosa amarilla que representan alegria y felicidades por el dia de su nacimiento ."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1577635394404",
+      "conditions": "@ocasion:cumpleaños",
+      "dialog_node": "response_4_1577637888153"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hola querido usuario en que te puedo ayudar?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Bienvenido",
+      "conditions": "#Saludo",
+      "dialog_node": "response_5_1577642140176",
+      "previous_sibling": "response_1_1577640751050"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola soy el Bot Flowers , y le ayudare a elegir la mejor opcion de flores para su ocasion."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bienvenido",
+      "conditions": "welcome",
+      "dialog_node": "response_1_1577640751050"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Actualmente tenemos diversas flores que puede ser para cada ocasion en especifico tales como rosas . girasoles , tulipanes entre otros. Que tipo de ocasion es la que celebra ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1577637179175",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1577637179198",
+      "previous_sibling": "handler_1_1577637179198"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1577637179175",
+      "context": {
+        "ocasion": "@ocasion"
+      },
+      "conditions": "@ocasion",
+      "event_name": "input",
+      "dialog_node": "handler_1_1577637179198"
+    },
+    {
+      "type": "standard",
+      "title": "Preguntas_especificas",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@ocasion",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1577635394404",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_7_1577636678811"
+    },
+    {
+      "type": "standard",
+      "title": "Gracias",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No hay de que querido humano.Vuelve pronto"
+              },
+              {
+                "text": "No hay de que querido humano, estoy para resolver tus dudas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#gracias",
+      "dialog_node": "node_1_1577640351977",
+      "previous_sibling": "node_7_1577635394404"
+    },
+    {
+      "type": "standard",
+      "title": "En otras cosas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No le he entendido. Intente reformular la consulta."
+              },
+              {
+                "text": "¿Puede expresarse con otras palabras? No le he entendido."
+              },
+              {
+                "text": "No entendí el significado."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "En otras cosas",
+      "previous_sibling": "node_1_1577640351977",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "preguntas_generales",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1577635394404"
+      },
+      "conditions": "#preguntas_dudas",
+      "dialog_node": "node_7_1577636678811",
+      "previous_sibling": "Bienvenido"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenido",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "welcome || #Saludo",
+      "dialog_node": "Bienvenido"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title"
+    },
+    "human_agent_assist": {
+      "prompt": "Querías decir:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "cliente",
+  "language": "es",
+  "description": ""
+}
